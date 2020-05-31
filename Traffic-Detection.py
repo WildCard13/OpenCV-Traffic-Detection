@@ -50,8 +50,6 @@ print(v)
 for i in range(len(boxes)):
     if i in indexes:
        x,y,w,h = boxes[i]
-       label = classes[class_ids[i]]
-       print(label)
        cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
 
 
